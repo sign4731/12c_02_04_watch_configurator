@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Coda&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Watch configurator</title>
+  </head>
+  <body>
+    <div id="welcome">
+      <h1>Watch Configurator</h1>
+
+      <h2>Welcome to the watch configurator. Please select styles of your liking below!</h2>
+
+      <p>To change the color of the watch, simply click on the desired section, when it turns black you can pick a color to the right.</p>
+    </div>
+    <div id="configurator">
+      <div id="product_view">
+        <div id="svg"></div>
+        <!-- <img src="images/watch_configurator1.png" alt="watch" class="watch" /> -->
+        <img src="images/diamond.png" alt="diamond" class="hide" data-feature="diamond" />
+        <img src="images/ears.png" alt="ears" class="hide" data-feature="ears" />
+        <img src="images/flower.png" alt="flower" class="hide" data-feature="flower" />
+        <img src="images/island.png" alt="island" class="hide" data-feature="island" />
+        <img src="images/star.png" alt="star" class="hide" data-feature="star" />
+        <div id="selected_features">
+          <h2>Selected features:</h2>
+          <ul></ul>
+        </div>
+      </div>
+
+      <div id="options_view">
+        <div id="colors">
+          <p>Select colors:</p>
+          <svg viewBox="0 0 800 100" class="color_box">
+            <rect class="color_btn" width="100" height="100" fill="beige" />
+            <rect class="color_btn" x="110" width="100" height="100" fill="rgb(222, 194, 137)" />
+            <rect class="color_btn" x="220" width="100" height="100" fill="rgb(222, 137, 137)" />
+            <rect class="color_btn" x="330" width="100" height="100" fill="rgb(137, 182, 222)" />
+            <rect class="color_btn" x="440" width="100" height="100" fill="rgb(137, 222, 205)" />
+            <rect class="color_btn" x="550" width="100" height="100" fill="rgb(185, 137, 222)" />
+            <rect class="color_btn" x="660" width="100" height="100" fill="rgb(169, 169, 169)" />
+          </svg>
+          <p>Or select your own color:</p>
+          <label class="colorselector">
+            <input type="color" id="colorPicker" />
+          </label>
+        </div>
+        <div id="features">
+          <p>Select features:</p>
+          <figure class="feature" data-feature="flower">
+            <img src="images/flower_feature.png" alt="flower" />
+            <figcaption>Exotic flowers</figcaption>
+          </figure>
+          <figure class="feature" data-feature="diamond">
+            <img src="images/diamond_feature.png" alt="diamond" />
+            <figcaption>Heart shaped diamond</figcaption>
+          </figure>
+          <figure class="feature" data-feature="ears">
+            <img src="images/ears_feature.png" alt="ears" />
+            <figcaption>Bunny ears</figcaption>
+          </figure>
+          <figure class="feature" data-feature="island">
+            <img src="images/island_feature.png" alt="island" />
+            <figcaption>Exotic island</figcaption>
+          </figure>
+          <figure class="feature" data-feature="star">
+            <img src="images/star_feature.png" alt="star" />
+            <figcaption>Shooting star</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
